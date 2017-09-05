@@ -1,0 +1,16 @@
+.menu-container{
+	background-color: black;
+}
+.menu-container > a {
+	color:white;
+	font-size: 20px;
+	padding: 10px;
+	text-decoration:none;   
+	line-height: 50px;
+}
+.menu-container > a:hover {
+	color:grey;
+	text-decoration:none;   
+}
+
+
