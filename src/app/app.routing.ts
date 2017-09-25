@@ -6,12 +6,14 @@ import { MenuComponent } from '../modules/menu/menu.component';
 import { FooterComponent } from '../modules/footer/footer.component';
 import { HomeComponent } from '../modules/home/home.component';
 import { ContactComponent } from '../modules/contact/contact.component';
+import { AddProductsComponent } from '../modules/add-products/addProducts.component';
 
 
 const appRoutes: Routes = [
 	{path: '', component: HomeComponent},
 	{path: 'home', component: HomeComponent},
-	{path: 'contact', component: ContactComponent}	
+	{path: 'contact', component: ContactComponent},
+	{path: 'add', component: AddProductsComponent}	
 ];
 
 export const appRoutingProviders: any[] = [];
