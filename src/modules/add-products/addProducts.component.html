@@ -1,1 +1,26 @@
-add view
+<br><p>You can see your product on console.log</p>
+<form #formProducto="ngForm" (ngSubmit)="onSubmit()" class="col-lg-6" id="form-producto">
+
+	<label>
+		Nombre
+	</label>
+	<input type="text" #name="ngModel" name="name" [(ngModel)]="product.name" class="form-control" required />
+
+	<label>
+		Descripción
+		
+	</label>
+	<textarea #description="ngModel" name="description" [(ngModel)]="product.description" class="form-control" required></textarea>
+
+	<label>
+		Precio
+		
+	</label>
+	<input type="text" #amount="ngModel" name="amount" [(ngModel)]="product.amount" class="form-control" required pattern="[0-9]+"/>
+
+	
+	<br/>
+	<input type="submit" value="Submit Product" class="btn btn-success"/>
+
+</form>
+<br>
