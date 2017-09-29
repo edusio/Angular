@@ -8,8 +8,14 @@ import {Product} from './model/product';
 })
 export class AddProductsComponent{
 	public product: Product;
+	public list: Array<Product>;
 
 	constructor(){
+		this.setInitialProduct();
+		this.list = [];
+	}
+
+	setInitialProduct() {
 		this.product = new Product(0,'','',0,'');
 	}
 
@@ -18,6 +24,9 @@ export class AddProductsComponent{
 	}
 
 	onSubmit(){
-		console.log(this.product);
+		this.list.push(this.product);
+		this.setInitialProduct();
+		localStorage.setItem('pula', JSON.stringify(this.list));
+		console.log('pula: ', JSON.parse(localStorage.getItem('pula')));
 	}
 }
