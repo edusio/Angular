@@ -1,0 +1,9 @@
+<h2>Lista de productos</h2>
+<div class="col-lg-3" *ngFor="let producto of list">
+	<div style="border:1px solid red">
+		<p>un producto</p>
+		<P>nombre : {{producto.name}}</P>
+		<P>description: {{producto.description}}</P>
+		<P>amount: {{producto.amount}}</P>
+	</div>
+</div>

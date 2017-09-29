@@ -26,7 +26,7 @@ export class AddProductsComponent{
 	onSubmit(){
 		this.list.push(this.product);
 		this.setInitialProduct();
-		localStorage.setItem('pula', JSON.stringify(this.list));
-		console.log('pula: ', JSON.parse(localStorage.getItem('pula')));
+		localStorage.setItem('products', JSON.stringify(this.list));
+		console.log('products: ', JSON.parse(localStorage.getItem('products')));
 	}
 }
